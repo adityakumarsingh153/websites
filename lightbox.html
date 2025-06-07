@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------title-------->
+    <title>Aditya</title>
+    <!---------favicon logo--------->
+    <link rel="shortcut icon" href="./assets/profile-pic 2.png" type="image/x-icon">
+    <!----link with css------->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/mediaqueries.css" />
+    <link rel="stylesheet" href="style/stylelight.css">
+    <!------link with cdn------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">🧑🏻 ADITYA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="navigateToIndex()">Home</a></li>
+                <li><a href="#about " onclick="navigateToAbout()">About</a></li>
+                <li><a href="#contact" onclick="navigateToContact()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aditya Kumar Singh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu(), navigateToIndex()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu(), navigateToAbout()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu(),navigateToContact()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Copyright &#169; 2024 ❤️ Aditya. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function navigateToIndex() {
+            window.location.href = 'index.html#home';
+        }
+        function navigateToAbout() {
+            window.location.href = 'index.html#about';
+        }
+        function navigateToContact() {
+            window.location.href = 'index.html#contact';
+        }
+    </script>
+    <script src="scriptlight.js"></script>
+</body>
+
+</html>

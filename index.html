@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!------title-------->
+  <title>Aditya Kumar Singh</title>
+  <!---------favicon logo--------->
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <!----link with css------->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/mediaqueries.css" />
+  <link rel="stylesheet" href="style/responsive.css">
+  <!------link with cdn------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <style>
+    @media screen and (max-width: 1200px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav id="desktop-nav home">
+    <div class="logo">🧑🏻 ADITYA</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#" onclick="navigateToIndex()">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">🧑🏻 Aditya Kumar Singh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu(), navigateToIndex()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/photo.png" alt="[profile-photo]" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Namaste 👋🏻, I'm</p>
+      <h1 class="title">Aditya Kumar Singh</h1>
+      <p class="section__text__p2"></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/adityakumarsingh15/'" />
+        <img src="./assets/instagram.png" alt="Instagram profile" class="icon"
+          onclick="location.href='https://www.instagram.com/___aks15___'" />
+        <img src="./assets/facebook.png" alt="facebook profile" class="icon"
+          onclick="location.href='https://www.facebook.com/share/16HJ3A67so/'" />
+        <img src="./assets/youtube.png" alt="youtube profile" class="icon"
+          onclick="location.href='https://www.youtube.com/@codeaditya1533/'" />
+        <img src="./assets/snapchat.png" alt="snapchat profile" class="icon"
+          onclick="location.href='https://www.snapchat.com/add/beingaditya153?share_id=myHPbquf0ZM&locale=en-IN'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Let me introduce myself 🧔🏻‍♂️ 👋 🧔🏻‍♂️</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/photo-2.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3><mark>Education</mark></h3>
+            <p> 👨🏻‍🎓 Diploma from <br> Electrical Engineering<br /> <br> 👨🏻‍🎓 B-Tech from <br> Information
+              Technology</p>
+            <!--- <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3><mark>Experience</mark></h3>
+            <p> 👨🏼‍💻 Full stack web developer <br/> 🖥 Core Java with DBMS</p> -->
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/portfolio.png" alt="Job icon" class="icon" />
+            <h3>Job</h3>
+            <p> <br> <br /> <br> <br> </p>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p>
+            Hello, I’m Aditya Kumar Singh, a final-year B.Tech student specializing in Information Technology with a
+            focus on full-stack web development. My academic journey has equipped me with a robust understanding of both
+            front-end and back-end technologies, enabling me to build comprehensive and efficient web applications. I am
+            skilled in modern frameworks and languages such as React, Node.js, and Java, and I am passionate about
+            leveraging technology to solve complex problems. I am eager to apply my technical expertise and innovative
+            mindset in a dynamic professional environment.
+            <br><br>
+            I am driven by a desire to contribute to the ever-evolving tech landscape and am eager to embrace new
+            challenges and opportunities.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skill'" />
+  </section>
+
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:chiku117304215@gmail.com'">chiku117304215@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/text-message-icon.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="./contact.html">Message Me</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#" onclick="navigateToIndex()">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2028 ❤️ Aditya. All Rights Reserved.</p>
+  </footer>
+  <script>
+    function navigateTolightbox() {
+      window.location.href = 'lightbox.html#blog';
+    }
+    function navigateToIndex() {
+      window.location.href = 'index.html';
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

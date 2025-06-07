@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f3f4;
+    padding: 20px;
+}
+
+.contact {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #060606;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    flex: 1;
+    min-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .input-box .input-field {
+        min-width: 48%;
+    }
+}
+
+.field .item {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 2px solid #222;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #222;
+    margin: 10px 0;
+}
+
+.field .item::placeholder {
+    color: rgba(22, 22, 22, 0.4);
+}
+
+.field.error .item {
+    border-color: #d93025;
+    color: #d93025;
+}
+
+.field .error-txt {
+    font-size: 14px;
+    color: #d93025;
+    text-align: left;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+.textarea-field .item {
+    resize: none;
+    height: 150px;
+}
+
+form button,
+.back-button {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+form button:hover,
+.back-button:hover {
+    background: #2980b9;
+}
+
+/* Make buttons full-width on smaller screens */
+@media (max-width: 480px) {
+    form button,
+    .back-button {
+        width: 100%;
+    }
+}
